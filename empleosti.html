@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EmpleosTI</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/miEstilo.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">				</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">			</script> 
+	</head>
+<body style="background-color: rgba(51, 102, 204);">
+	<div class="container">
+	   <header class="row">
+			<div class="col-sm-10">
+              <h1 class="text-center">EmpleosTI</h1>
+			</div>
+	   </header>	
+			<section>
+				<div>
+                    <div class="container" style="background-color: rgba(109, 108, 108, 0.678);">
+                        <form action="usuarios.php" method="post">
+                            <fieldset>
+                            <legend>Datos de usuario</legend>
+                                <div class="col-md-10" style="padding-left:5px;">
+                                	<div class="col-md-4">
+                                    	<h4>Email</h4>
+                                    	<input class="form-control" type="email" placeholder="usuario@correo.com" name="email" required>
+                                	</div>
+                                	<div class="col-md-4">
+                                    	<h4>Nombre </h4>
+                                    	<input class="form-control" type="text"  placeholder= "Juan Perez" name="nombre" required>
+                                	</div>
+                                </div>
+                                            <div class="col-md-4" style="padding-top:20px; padding-bottom: 20px;">
+                                            <input class="btn btn-success" type="submit" value="Registrar usuario">
+                                            </div>
+                            </fieldset>
+                        </form>        
+                        <form action="telefonos.php" method="post">
+                        	<fieldset>
+                        		<legend>Telefonos</legend>
+                        		<div class="col-md-10" style="padding-left:5px;">
+                        			<div class="col-md-4">
+                                    	<h4>Email</h4>
+                                    	<input class="form-control" type="email" placeholder="usuario@correo.com" name="emailTelefono" required>
+                                	</div>
+                                	<div class="col-md-4">
+                                    	<h4>Telefono </h4>
+                                    	<input class="form-control" type="tel" placeholder="442 2101616" name="telefonoUsuario" pattern="[0-9]{10}" required>
+                                	</div>
+                                </div>
+
+                                <div class="col-md-4" style="padding-top:20px; padding-bottom: 20px;">
+                                            <input class="btn btn-success" type="submit" value="Registrar telefono">
+                                            </div>
+                        	</fieldset>
+                        </form>
+                    </div>
+                </div>
+			</section>
+			
+				
+    </div>
+    <div>
+    <footer class="footer navbar-fixed-bottom">					
+        <p class="text-center">José Antonio Oropeza Pérez</p>
+    </footer>	
+</div>	
+</body>
+</html>
